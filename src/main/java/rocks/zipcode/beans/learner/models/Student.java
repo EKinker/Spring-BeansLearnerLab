@@ -1,5 +1,7 @@
 package rocks.zipcode.beans.learner.models;
 
+import rocks.zipcode.beans.learner.models.interfaces.Learner;
+
 public class Student extends Person implements Learner {
 
     private double totalStudyTime;

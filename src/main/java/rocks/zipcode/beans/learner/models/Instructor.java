@@ -1,6 +1,8 @@
 package rocks.zipcode.beans.learner.models;
 
-import java.util.Iterator;
+import rocks.zipcode.beans.learner.models.interfaces.Learner;
+import rocks.zipcode.beans.learner.models.interfaces.Teacher;
+
 import java.util.stream.StreamSupport;
 
 public class Instructor extends Person implements Teacher {

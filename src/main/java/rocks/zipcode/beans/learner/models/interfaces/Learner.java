@@ -1,4 +1,4 @@
-package rocks.zipcode.beans.learner.models;
+package rocks.zipcode.beans.learner.models.interfaces;
 
 public interface Learner {
 
