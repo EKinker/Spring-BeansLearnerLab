@@ -1,4 +1,4 @@
-package rocks.zipcode.beans.learner;
+package rocks.zipcode.beans.learner.models;
 
 public class Person {
 
