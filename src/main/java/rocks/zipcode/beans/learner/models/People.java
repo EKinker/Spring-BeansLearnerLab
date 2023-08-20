@@ -2,6 +2,7 @@ package rocks.zipcode.beans.learner.models;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 
 public abstract class People<PersonType extends Person> implements Iterable<PersonType> {
@@ -50,5 +51,20 @@ public abstract class People<PersonType extends Person> implements Iterable<Pers
 
     public List<PersonType> findAll(){
         return personList;
+    }
+
+    @Override
+    public Iterator<PersonType> iterator() {
+        return personList.iterator();
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("People: ");
+        for (PersonType pt : personList){
+            sb.append("\nName: "+ pt.getName()+", ID: "+pt.getId());
+        }
+        return sb.toString();
     }
 }

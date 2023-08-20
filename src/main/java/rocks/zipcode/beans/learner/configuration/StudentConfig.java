@@ -26,6 +26,8 @@ public class StudentConfig {
         previous.add(new Student(9876L, "Frodo"));
         previous.add(new Student(8765L, "Sam"));
         previous.add(new Student(7654L, "Merri"));
-        return new Students();
+        return previous;
     }
+
+
 }
