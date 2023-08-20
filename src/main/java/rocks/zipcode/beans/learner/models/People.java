@@ -61,10 +61,12 @@ public abstract class People<PersonType extends Person> implements Iterable<Pers
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("People: ");
+        String prefix = "";
         for (PersonType pt : personList){
-            sb.append("\nName: "+ pt.getName()+", ID: "+pt.getId());
+            sb.append(prefix+"Name: "+ pt.getName()+", ID: "+pt.getId());
+            prefix="\n";
         }
+
         return sb.toString();
     }
 }

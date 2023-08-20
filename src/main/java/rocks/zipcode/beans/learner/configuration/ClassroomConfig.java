@@ -11,11 +11,11 @@ import rocks.zipcode.beans.learner.models.Students;
 @Configuration
 public class ClassroomConfig {
 
-//    @Autowired
-//    Instructors instructors;
-//
-//    @Autowired
-//    Students students;
+    @Autowired
+    Instructors instructors;
+
+    @Autowired
+    Students students;
 
 
     @Bean
@@ -29,4 +29,5 @@ public class ClassroomConfig {
     public Classroom previousCohort(Instructors instructors, Students previousStudents) {
         return new Classroom(instructors, previousStudents);
     }
+
 }

@@ -29,7 +29,6 @@ class InstructorsConfigTest {
     @Test
     void tcUSAInstructors() {
         String expected = """
-                People:\s
                 Name: Randall, ID: 666
                 Name: Blaine, ID: 1332
                 Name: Mordred, ID: 1998""";
@@ -41,7 +40,6 @@ class InstructorsConfigTest {
     @Test
     void ucUKInstructors() {
         String expected = """
-                People:\s
                 Name: Roland, ID: 19
                 Name: Susannah, ID: 38
                 Name: Eddie, ID: 57""";
@@ -53,7 +51,6 @@ class InstructorsConfigTest {
     @Test
     void instructors() {
         String expected = """
-                People:\s
                 Name: Kris, ID: 42
                 Name: Dolio, ID: 84
                 Name: Dan, ID: 126""";

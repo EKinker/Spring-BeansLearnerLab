@@ -23,4 +23,12 @@ public class Classroom {
     public Students getStudents() {
         return students;
     }
+
+    @Override
+    public String toString() {
+        return "Classroom:\n" +
+                "Instructors:\n" + instructors.toString() +
+                "\nStudents:\n" + students.toString() +
+                '}';
+    }
 }
