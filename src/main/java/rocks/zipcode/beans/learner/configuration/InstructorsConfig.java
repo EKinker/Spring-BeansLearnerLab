@@ -9,7 +9,7 @@ import rocks.zipcode.beans.learner.models.Instructors;
 @Configuration
 public class InstructorsConfig {
 
-    @Bean
+    @Bean(name = "tcUSAInstructors")
     public Instructors tcUSAInstructors(){
         Instructors usa = new Instructors();
         usa.add(new Instructor(666L,"Randall"));
@@ -20,7 +20,7 @@ public class InstructorsConfig {
     }
 
     @Bean
-    public Instructors ucUKInstructors(){
+    public Instructors tcUKInstructors(){
         Instructors uk = new Instructors();
         uk.add(new Instructor(19L, "Roland"));
         uk.add(new Instructor(38L, "Susannah"));
